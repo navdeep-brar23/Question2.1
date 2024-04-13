@@ -1,0 +1,21 @@
+<!-- meown_blog.xml -->
+<blog>
+    <post>
+        <title>About Cats</title>
+        <content>
+            <![CDATA[
+            <p>Cats are domesticated animals. ‘Felis catus’ is its scientific term. It is a small animal from the "Felidae" family. The cat is the only member of this family that has undergone domestication.</p>
+            <p>This family of animals also comprises tigers, panthers, and other animals. Domesticated cats are popularly loved because of their cuteness and playful nature. Playing with them makes you feel less stressed and anxious.</p>
+            ]]>
+        </content>
+    </post>
+    <post>
+        <title>Different Types of Cats</title>
+        <content>
+            <![CDATA[
+            <p>There are three different types of cats: domestic cats, farm cats, and feral cats. People all across the world love to pet house cats. In various customs and cultures, such as the Japanese culture, cats are revered. Cats are smart animals. They are expert hunters of snakes, rats, etc.</p>
+            <p>Cats are extremely slothful pets; they sleep for lengthy periods of time each day and are kind to those they know and trust. Cats are not particularly sociable. Its child is known as a "kitten." The same family as tigers and panthers includes cats. Cats are omnivores because they eat both plants and animals for food.</p>
+            ]]>
+        </content>
+    </post>
+</blog>

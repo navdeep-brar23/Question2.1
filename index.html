@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meown Blog</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Add lightbox plugin CSS -->
+    <link rel="stylesheet" href="lightbox.min.css">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add lightbox plugin JS -->
+    <script src="lightbox.min.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Meown Blog</h1>
+    </header>
+
+    
+        
+
+    <div class="content">
+        <!-- Blog post container -->
+        <div id="blog-posts"></div>
+    </div>
+
+    <footer>
+        <p>&copy; page for those who love cats.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Load XML file
+            $.ajax({
+                type: "GET",
+                url: "meown_blog.xml",
+                dataType: "xml",
+                success: function(xml) {
+                    // Parse XML and extract blog posts
+                    $(xml).find('post').each(function() {
+                        var title = $(this).find('title').text();
+                        var content = $(this).find('content').text();
+                        
+                        // Append blog post to #blog-posts container
+                        $('#blog-posts').append('<div class="blog-post"><h2>' + title + '</h2><div class="text">' + content + '</div></div>');
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error loading XML:", error);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
